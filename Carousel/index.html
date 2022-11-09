@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="carousel">
+      <div class="carousel-indicators">
+        <button class="indicator-button"></button>
+        <button class="indicator-button"></button>
+        <button class="indicator-button"></button>
+      </div>
+      <div class="carousel-wraper">
+        <div class="carousel-item">
+          <img
+            src="https://icepipeled.com/wp-content/uploads/2020/11/ICEPIPE_2020_12_PC-bg.png"
+            alt=""
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/8LOK/image/Kx3PTA8nv2pHelBbVxvavOi0lK0.JPG"
+            alt=""
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSBiEflBydz91VM6LdWTzOEuwMc4rEFfqBxg&usqp=CAU"
+            alt=""
+          />
+        </div>
+      </div>
+      <button class="control-button control-previous" onclick="previousImg()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          className="w-6 h-6"
+        >
+          <path
+            fillRule="evenodd"
+            d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z"
+            clipRule="evenodd"
+          />
+        </svg>
+      </button>
+      <button class="control-button control-next" onclick="nextImg()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
