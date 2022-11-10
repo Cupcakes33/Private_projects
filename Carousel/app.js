@@ -29,4 +29,8 @@ indicatorButton.forEach((e, n) => {
 
 function moveCarousel(e) {
   carouselWraper.style.transform = `translateX(${-e}00%)`;
+  indicatorButton.forEach((e) => {
+    e.classList.remove("active");
+  });
+  indicatorButton[e].classList.add("active");
 }
