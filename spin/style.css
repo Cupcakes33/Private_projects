@@ -1,0 +1,76 @@
+:root {
+  --main-bg: #f7b0be;
+  --sub-c1: #ef3c23;
+  --sub-c2: #fac92c;
+  --sub-c3: #2178ae;
+  --sub-c4: #cfe5cc;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--main-bg);
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  border-radius: 25px;
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+}
+
+.spin {
+  opacity: 0.3;
+  position: absolute;
+  top: 3%;
+  width: 400px;
+  height: 400px;
+  transform-origin: 50% 40%;
+  /* transform 의 구심점을 설정 */
+  border-radius: 43%;
+}
+
+.spin.box1 {
+  background: var(--sub-c2);
+  animation: spin 3000ms infinite linear;
+}
+
+.spin.box2 {
+  background: var(--sub-c1);
+  animation: spin 2000ms infinite linear;
+}
+
+.spin.box3 {
+  background: var(--sub-c3);
+  animation: spin 6000ms infinite linear;
+}
+
+.spin.box4 {
+  background: var(--sub-c4);
+  animation: spin 7000ms infinite linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 0.3;
+  }
+}
